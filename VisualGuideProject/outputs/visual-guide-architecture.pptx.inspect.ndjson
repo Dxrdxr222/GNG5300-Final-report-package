@@ -1,0 +1,112 @@
+{"kind":"deck","id":"pr/vx0w1u","name":"Deck"}
+{"kind":"layout","layoutId":"810d94b5-397b-4172-9f08-2754d09663ec","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"2717e14f-032c-45a2-83e1-e273f0f3c20a","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/grvcbk","slide":1,"title":"One loop turns camera frames into actionable guidance","textShapes":20}
+{"kind":"textbox","id":"sh/9ozy1gfu","slide":1,"name":"slide-1-title","text":"One loop turns camera frames into actionable guidance","textPreview":"One loop turns camera frames into actionable guidance","textChars":53,"textLines":1,"bbox":[42,34,1160,92]}
+{"kind":"textbox","id":"sh/ml8z61g3","slide":1,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1178,665,58,24]}
+{"kind":"textbox","id":"sh/7mhgz6xo","slide":1,"text":"main.py starts visual_guide_runtime.py; config.py supplies every switch and threshold.","textPreview":"main.py starts visual_guide_runtime.py; config.py supplies every switch and threshold.","textChars":86,"textLines":1,"bbox":[44,112,1120,38]}
+{"kind":"shape","id":"sh/wrahcby5","slide":1,"bbox":[490,360,64,0]}
+{"kind":"shape","id":"sh/hsji5gfq","slide":1,"bbox":[744,360,64,0]}
+{"kind":"shape","id":"sh/up8zalgz","slide":1,"bbox":[998,360,64,0]}
+{"kind":"shape","id":"sh/vq1036xk","slide":1,"name":"config-layer","bbox":[44,190,230,410]}
+{"kind":"textbox","id":"sh/cv6h0ry1","slide":1,"text":"CONTROL LAYER","textPreview":"CONTROL LAYER","textChars":13,"textLines":1,"bbox":[68,214,170,26]}
+{"kind":"textbox","id":"sh/xwfytwzm","slide":1,"text":"config.py","textPreview":"config.py","textChars":9,"textLines":1,"bbox":[68,248,170,44]}
+{"kind":"textbox","id":"sh/x43u1kri","slide":1,"text":"Camera\n320 × 240 · 30 FPS\n\nDetection\nthresholds · intervals\n\nRisk\ngrowth · speed · direction\n\nOutput\nbeep / speech · repeat limits","textPreview":"Camera | 320 × 240 · 30 FPS |  | Detection | thresholds · intervals |  | Risk | growth · speed · direction |  | Output | beep / speech · ...","textChars":130,"textLines":11,"bbox":[68,310,170,250]}
+{"kind":"shape","id":"sh/w3ut8zax","slide":1,"name":"capture-node","bbox":[300,250,190,220]}
+{"kind":"shape","id":"sh/b2lczu9s","slide":1,"bbox":[300,250,190,12]}
+{"kind":"textbox","id":"sh/a1cb6ps7","slide":1,"text":"Capture","textPreview":"Capture","textChars":7,"textLines":1,"bbox":[318,282,154,36]}
+{"kind":"textbox","id":"sh/l8nu54ru","slide":1,"text":"camera_api.py","textPreview":"camera_api.py","textChars":13,"textLines":1,"bbox":[318,326,154,58]}
+{"kind":"textbox","id":"sh/k7edcza9","slide":1,"text":"Open camera\nread fresh frame","textPreview":"Open camera | read fresh frame","textChars":28,"textLines":2,"bbox":[318,402,154,56]}
+{"kind":"shape","id":"sh/j65c3u9o","slide":1,"name":"perceive-node","bbox":[554,250,190,220]}
+{"kind":"shape","id":"sh/y5cvaps3","slide":1,"bbox":[554,250,190,12]}
+{"kind":"textbox","id":"sh/twnu94rq","slide":1,"text":"Perceive","textPreview":"Perceive","textChars":8,"textLines":1,"bbox":[572,282,154,36]}
+{"kind":"textbox","id":"sh/8vedgja5","slide":1,"text":"detection_api.py","textPreview":"detection_api.py","textChars":16,"textLines":1,"bbox":[572,326,154,58]}
+{"kind":"textbox","id":"sh/sr65s72t","slide":1,"text":"Background + motion\nYOLO recognition","textPreview":"Background + motion | YOLO recognition","textChars":36,"textLines":2,"bbox":[572,402,154,56]}
+{"kind":"shape","id":"sh/dcf61c3e","slide":1,"name":"assess-node","bbox":[808,250,190,220]}
+{"kind":"shape","id":"sh/qponqhkn","slide":1,"bbox":[808,250,190,12]}
+{"kind":"textbox","id":"sh/rqxoz2l8","slide":1,"text":"Assess","textPreview":"Assess","textChars":6,"textLines":1,"bbox":[826,282,154,36]}
+{"kind":"textbox","id":"sh/0fq5wr2p","slide":1,"text":"guidance_api.py\nrisk_api.py","textPreview":"guidance_api.py | risk_api.py","textChars":27,"textLines":2,"bbox":[826,326,154,58]}
+{"kind":"textbox","id":"sh/1gz65w3a","slide":1,"text":"Direction · closeness\napproach grade","textPreview":"Direction · closeness | approach grade","textChars":36,"textLines":2,"bbox":[826,402,154,56]}
+{"kind":"shape","id":"sh/edonuhkj","slide":1,"name":"caution-node","bbox":[1062,250,190,220]}
+{"kind":"shape","id":"sh/fexo3ml4","slide":1,"bbox":[1062,250,190,12]}
+{"kind":"textbox","id":"sh/gjm5knml","slide":1,"text":"Caution","textPreview":"Caution","textChars":7,"textLines":1,"bbox":[1080,282,154,36]}
+{"kind":"textbox","id":"sh/hkvmts36","slide":1,"text":"warning_api.py\noutput_api.py","textPreview":"warning_api.py | output_api.py","textChars":28,"textLines":2,"bbox":[1080,326,154,58]}
+{"kind":"textbox","id":"sh/jel8zq5o","slide":1,"text":"Stable message\nterminal + audio","textPreview":"Stable message | terminal + audio","textChars":31,"textLines":2,"bbox":[1080,402,154,56]}
+{"kind":"textbox","id":"sh/ydsr6543","slide":1,"text":"The runtime repeats this path for every frame until the user quits or the camera is lost.","textPreview":"The runtime repeats this path for every frame until the user quits or the camera is lost.","textChars":89,"textLines":1,"bbox":[300,518,952,52]}
+{"kind":"textbox","id":"sh/lg3q10ne","slide":1,"text":"Architecture principle: fast OpenCV signals decide danger; YOLO adds identity.","textPreview":"Architecture principle: fast OpenCV signals decide danger; YOLO adds identity.","textChars":78,"textLines":1,"bbox":[300,584,952,42]}
+{"kind":"notes","id":"nt/grvcbk","slide":1,"text":"Start from config.py: it is the project's control panel for camera, detector sensitivity, YOLO, risk grading, stability, and audio behavior.\nmain.py only calls run_visual_guide_session(). The runtime constructs the camera, three detection sources, the stabilizer, and the approach-risk tracker.\nFor each frame the same pipeline runs: capture, perceive, assess, then caution. This separation makes each module testable and lets us tune behavior without rewriting the loop."}
+{"kind":"slide","id":"sl/ksjrw2","slide":2,"title":"The camera minimizes latency and builds a stable baseline","textShapes":16}
+{"kind":"textbox","id":"sh/jilw3210","slide":2,"name":"slide-2-title","text":"The camera minimizes latency and builds a stable baseline","textPreview":"The camera minimizes latency and builds a stable baseline","textChars":57,"textLines":1,"bbox":[42,34,1160,92]}
+{"kind":"textbox","id":"sh/kjexc72l","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1178,665,58,24]}
+{"kind":"textbox","id":"sh/5kne5cj6","slide":2,"text":"CAMERAAPI.START()","textPreview":"CAMERAAPI.START()","textChars":17,"textLines":1,"bbox":[44,142,230,26]}
+{"kind":"textbox","id":"sh/6lwfehkb","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[44,184,38,38]}
+{"kind":"textbox","id":"sh/7m5w7m1w","slide":2,"text":"Open the fastest backend","textPreview":"Open the fastest backend","textChars":24,"textLines":1,"bbox":[88,182,470,34]}
+{"kind":"textbox","id":"sh/snexgr2h","slide":2,"text":"V4L2 on Raspberry Pi/Linux; DirectShow on Windows.","textPreview":"V4L2 on Raspberry Pi/Linux; DirectShow on Windows.","textChars":50,"textLines":1,"bbox":[88,218,490,50]}
+{"kind":"textbox","id":"sh/tone9cj2","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[44,282,38,38]}
+{"kind":"textbox","id":"sh/upwfih0n","slide":2,"text":"Request a responsive stream","textPreview":"Request a responsive stream","textChars":27,"textLines":1,"bbox":[88,280,470,34]}
+{"kind":"textbox","id":"sh/fa5wbm18","slide":2,"text":"320 × 240, 30 FPS, one-frame buffer; resize if the camera returns another size.","textPreview":"320 × 240, 30 FPS, one-frame buffer; resize if the camera returns another size.","textChars":79,"textLines":1,"bbox":[88,316,500,64]}
+{"kind":"textbox","id":"sh/rmpojexs","slide":2,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[44,398,38,38]}
+{"kind":"textbox","id":"sh/61gnq9g7","slide":2,"text":"Discard stale frames","textPreview":"Discard stale frames","textChars":20,"textLines":1,"bbox":[88,396,470,34]}
+{"kind":"textbox","id":"sh/to76l4fi","slide":2,"text":"cap.grab() drops two buffered frames before reading the newest one; failed reads retry three times.","textPreview":"cap.grab() drops two buffered frames before reading the newest one; failed reads retry three times.","textChars":99,"textLines":1,"bbox":[88,432,500,66]}
+{"kind":"textbox","id":"sh/snypszyx","slide":2,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[44,516,38,38]}
+{"kind":"textbox","id":"sh/jypofuxg","slide":2,"text":"Capture the empty scene","textPreview":"Capture the empty scene","textChars":23,"textLines":1,"bbox":[88,514,470,34]}
+{"kind":"textbox","id":"sh/ixwnmpgv","slide":2,"text":"After a 1-second settle, the median of 12 frames becomes the background reference.","textPreview":"After a 1-second settle, the median of 12 frames becomes the background reference.","textChars":82,"textLines":1,"bbox":[88,550,500,62]}
+{"kind":"textbox","id":"sh/4zy5ozy1","slide":2,"text":"Real test frame: object center → direction; box size → closeness; warning appears in the overlay and terminal.","textPreview":"Real test frame: object center → direction; box size → closeness; warning appears in the overlay and terminal.","textChars":110,"textLines":1,"bbox":[632,594,600,56]}
+{"kind":"image","id":"im/yt0na9wb","slide":2,"name":"","geometry":"roundRect","alt":"Project obstacle test showing left-center-right regions, detection box, and caution output","bbox":[632,150,600,426]}
+{"kind":"notes","id":"nt/ksjrw2","slide":2,"text":"The camera is monocular: it supplies ordinary color frames, not depth data.\nLow resolution and buffer control reduce lag. Dropping old frames is important because a safety warning based on an old image can be worse than no warning.\nBefore the continuous loop, the system asks for an empty view and builds a median background from 12 frames. Median capture is robust to a brief moving object or exposure fluctuation."}
+{"kind":"slide","id":"sl/dopqr6","slide":3,"title":"Danger comes from change, size, position, and approach","textShapes":18}
+{"kind":"textbox","id":"sh/gjydg36h","slide":3,"name":"slide-3-title","text":"Danger comes from change, size, position, and approach","textPreview":"Danger comes from change, size, position, and approach","textChars":54,"textLines":1,"bbox":[42,34,1160,92]}
+{"kind":"textbox","id":"sh/vi5w7ipw","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1178,665,58,24]}
+{"kind":"shape","id":"sh/uhwvedob","slide":3,"bbox":[44,164,360,300]}
+{"kind":"textbox","id":"sh/587eds7y","slide":3,"text":"BACKGROUND","textPreview":"BACKGROUND","textChars":10,"textLines":1,"bbox":[64,184,160,26]}
+{"kind":"textbox","id":"sh/47ydkn6d","slide":3,"text":"What entered the scene?","textPreview":"What entered the scene?","textChars":23,"textLines":1,"bbox":[64,224,320,54]}
+{"kind":"textbox","id":"sh/3mpwbips","slide":3,"text":"Absolute difference from the saved empty view\n\nBlur → threshold 14 → clean mask → contours ≥ 550 px\n\nRuns every 2 frames; must persist for 2 processed cycles","textPreview":"Absolute difference from the saved empty view |  | Blur → threshold 14 → clean mask → contours ≥ 550 px |  | Runs every 2 frames; must pe...","textChars":157,"textLines":5,"bbox":[64,292,320,146]}
+{"kind":"shape","id":"sh/ilgvido7","slide":3,"bbox":[449,164,360,300]}
+{"kind":"textbox","id":"sh/dcrehs7u","slide":3,"text":"MOTION","textPreview":"MOTION","textChars":6,"textLines":1,"bbox":[469,184,160,26]}
+{"kind":"textbox","id":"sh/sbidon6p","slide":3,"text":"What is moving now?","textPreview":"What is moving now?","textChars":19,"textLines":1,"bbox":[469,224,320,54]}
+{"kind":"textbox","id":"sh/6hcjat8b","slide":3,"text":"Difference between consecutive frames\n\nThreshold 18 → contours ≥ 450 px\n\nRuns every frame and prioritizes actively moving candidates","textPreview":"Difference between consecutive frames |  | Threshold 18 → contours ≥ 450 px |  | Runs every frame and prioritizes actively moving candidates","textChars":132,"textLines":5,"bbox":[469,292,320,146]}
+{"kind":"shape","id":"sh/7i503y9w","slide":3,"bbox":[854,164,360,300]}
+{"kind":"textbox","id":"sh/8je1c3qh","slide":3,"text":"YOLO","textPreview":"YOLO","textChars":4,"textLines":1,"bbox":[874,184,160,26]}
+{"kind":"textbox","id":"sh/tkni58r2","slide":3,"text":"What is the object?","textPreview":"What is the object?","textChars":19,"textLines":1,"bbox":[874,224,320,54]}
+{"kind":"textbox","id":"sh/ulwjed8n","slide":3,"text":"Runs every 10 frames at 320 px\n\nRecognizes person, chair, car, bicycle\n\nBy default it labels a matched candidate; it does not trigger a warning alone","textPreview":"Runs every 10 frames at 320 px |  | Recognizes person, chair, car, bicycle |  | By default it labels a matched candidate; it does not tri...","textChars":149,"textLines":5,"bbox":[874,292,320,146]}
+{"kind":"shape","id":"sh/vm507i98","slide":3,"bbox":[224,474,0,35]}
+{"kind":"shape","id":"sh/gne1gnqd","slide":3,"bbox":[629,474,0,35]}
+{"kind":"shape","id":"sh/h8ni9sry","slide":3,"bbox":[1034,474,0,35]}
+{"kind":"shape","id":"sh/apsz2983","slide":3,"name":"danger-decision-band","bbox":[44,512,1170,116]}
+{"kind":"textbox","id":"sh/bql0ve9o","slide":3,"text":"SELECT","textPreview":"SELECT","textChars":6,"textLines":1,"bbox":[68,534,90,26]}
+{"kind":"textbox","id":"sh/zuhg3apg","slide":3,"text":"Close + center wins","textPreview":"Close + center wins","textChars":19,"textLines":1,"bbox":[166,528,230,34]}
+{"kind":"textbox","id":"sh/et8fa5ov","slide":3,"text":"10% frame area = medium · 25% = close","textPreview":"10% frame area = medium · 25% = close","textChars":37,"textLines":1,"bbox":[166,566,282,28]}
+{"kind":"textbox","id":"sh/1wzy5k7m","slide":3,"text":"GRADE APPROACH","textPreview":"GRADE APPROACH","textChars":14,"textLines":1,"bbox":[486,534,160,26]}
+{"kind":"textbox","id":"sh/0vqxcf61","slide":3,"text":"Growth + trajectory + speed","textPreview":"Growth + trajectory + speed","textChars":27,"textLines":1,"bbox":[658,528,318,34]}
+{"kind":"textbox","id":"sh/rqxgzapk","slide":3,"text":"box grows · distance falls · moves center/down · moves fast","textPreview":"box grows · distance falls · moves center/down · moves fast","textChars":59,"textLines":1,"bbox":[658,566,420,28]}
+{"kind":"textbox","id":"sh/qpof65oz","slide":3,"text":"Risk score ≥ 4 medium · ≥ 6 high","textPreview":"Risk score ≥ 4 medium · ≥ 6 high","textChars":32,"textLines":1,"bbox":[946,596,246,24]}
+{"kind":"notes","id":"nt/dopqr6","slide":3,"text":"There are two fast danger signals. Background difference finds anything that changed from the empty scene; frame-to-frame difference finds active motion.\nContours become bounding boxes. Very small regions are rejected as noise, and boxes covering too much of the image are rejected because camera movement can create one huge false region.\nThe primary candidate is selected mainly by closeness, then center direction, vertical position, source priority, and size.\nYOLO answers 'what is it?' and is intentionally not the safety authority by default. Approach risk uses up to eight observations and requires size growth or falling estimated distance before lateral motion can become serious."}
+{"kind":"slide","id":"sl/orcal2","slide":4,"title":"Warnings escalate only when the evidence is stable","textShapes":19}
+{"kind":"textbox","id":"sh/7q9cfulo","slide":4,"name":"slide-4-title","text":"Warnings escalate only when the evidence is stable","textPreview":"Warnings escalate only when the evidence is stable","textChars":50,"textLines":1,"bbox":[42,34,1160,92]}
+{"kind":"textbox","id":"sh/8r2t8z29","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1178,665,58,24]}
+{"kind":"shape","id":"sh/tsbuh43u","slide":4,"bbox":[110,266,300,0]}
+{"kind":"shape","id":"sh/utkbapkf","slide":4,"bbox":[410,266,300,0]}
+{"kind":"shape","id":"sh/vutcjul0","slide":4,"bbox":[710,266,300,0]}
+{"kind":"shape","id":"sh/gv2tcz2l","slide":4,"bbox":[54,206,220,120]}
+{"kind":"textbox","id":"sh/hwbul436","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[72,224,48,26]}
+{"kind":"textbox","id":"sh/ixkve9kb","slide":4,"text":"Stabilize","textPreview":"Stabilize","textChars":9,"textLines":1,"bbox":[72,256,176,34]}
+{"kind":"textbox","id":"sh/3idcnelw","slide":4,"text":"Smooth the box; hold a missed detection for 2 frames. Normal text must persist 4 frames; urgent stop can pass in 1.","textPreview":"Smooth the box; hold a missed detection for 2 frames. Normal text must persist 4 frames; urgent stop can pass in 1.","textChars":115,"textLines":1,"bbox":[54,350,250,126]}
+{"kind":"shape","id":"sh/fyd0ne5c","slide":4,"bbox":[354,206,220,120]}
+{"kind":"textbox","id":"sh/ex4zu94r","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[372,224,48,26]}
+{"kind":"textbox","id":"sh/10vip4ni","slide":4,"text":"Classify","textPreview":"Classify","textChars":8,"textLines":1,"bbox":[372,256,176,34]}
+{"kind":"textbox","id":"sh/gzmhwzmx","slide":4,"text":"Far + not approaching: silent\nMedium center: caution\nClose center: stop","textPreview":"Far + not approaching: silent | Medium center: caution | Close center: stop","textChars":71,"textLines":3,"bbox":[354,350,250,126]}
+{"kind":"shape","id":"sh/rut0ju5g","slide":4,"bbox":[654,206,220,120]}
+{"kind":"textbox","id":"sh/6tkzqp4v","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[672,224,48,26]}
+{"kind":"textbox","id":"sh/twbil4nm","slide":4,"text":"Upgrade","textPreview":"Upgrade","textChars":7,"textLines":1,"bbox":[672,256,176,34]}
+{"kind":"textbox","id":"sh/sv2hszm1","slide":4,"text":"Medium/high approach can promote a far object to caution. Close + center + approaching becomes an urgent stop.","textPreview":"Medium/high approach can promote a far object to caution. Close + center + approaching becomes an urgent stop.","textChars":110,"textLines":1,"bbox":[654,350,250,126]}
+{"kind":"shape","id":"sh/bqx0vy5k","slide":4,"bbox":[954,206,220,120]}
+{"kind":"textbox","id":"sh/qpoz2t4z","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[972,224,48,26]}
+{"kind":"textbox","id":"sh/ml83uxo7","slide":4,"text":"Deliver","textPreview":"Deliver","textChars":7,"textLines":1,"bbox":[972,256,176,34]}
+{"kind":"textbox","id":"sh/nmhknips","slide":4,"text":"Print stable text. Use non-blocking audio so the camera loop never waits for a beep or speech.","textPreview":"Print stable text. Use non-blocking audio so the camera loop never waits for a beep or speech.","textChars":94,"textLines":1,"bbox":[954,350,250,126]}
+{"kind":"shape","id":"sh/8nqlwn6d","slide":4,"bbox":[44,526,1170,100]}
+{"kind":"textbox","id":"sh/9oj2ps7y","slide":4,"text":"CAUTION POLICY","textPreview":"CAUTION POLICY","textChars":14,"textLines":1,"bbox":[68,548,150,24]}
+{"kind":"textbox","id":"sh/aps3yxoj","slide":4,"text":"“Caution. approaching car ahead.”","textPreview":"“Caution. approaching car ahead.”","textChars":33,"textLines":1,"bbox":[236,542,390,34]}
+{"kind":"textbox","id":"sh/vq1kr2p4","slide":4,"text":"→ terminal warning + vehicle/approach beep","textPreview":"→ terminal warning + vehicle/approach beep","textChars":42,"textLines":1,"bbox":[236,580,390,26]}
+{"kind":"textbox","id":"sh/wral0769","slide":4,"text":"Anti-spam","textPreview":"Anti-spam","textChars":9,"textLines":1,"bbox":[702,542,130,30]}
+{"kind":"textbox","id":"sh/xsj2tc7u","slide":4,"text":"beep ≥ 2 s apart · urgent repeat 5 s · normal repeat 8 s","textPreview":"beep ≥ 2 s apart · urgent repeat 5 s · normal repeat 8 s","textChars":56,"textLines":1,"bbox":[702,580,470,26]}
+{"kind":"notes","id":"nt/orcal2","slide":4,"text":"A raw detection is not announced immediately. The box is smoothed, brief dropouts are held, and warning text must remain stable before it replaces the current output.\nThe message rules are simple to explain: far objects are ignored unless the approach tracker says medium or high risk; medium center objects receive caution; close center objects receive stop.\nAudio is non-blocking. In the current beep configuration, audio is reserved for an approaching object ahead or for a warning containing a recognized car or bicycle. Repetition limits prevent continuous alarm fatigue.\nClose by emphasizing that the system combines responsiveness with filtering: it reacts quickly to an urgent center danger but suppresses flicker, lateral-only motion, and repeated messages."}

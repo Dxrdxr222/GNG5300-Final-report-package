@@ -1,0 +1,7 @@
+# Optional YOLO dependencies.
+# Install this only when you are ready to test YOLO.
+#
+# Start with the base package for live camera testing.
+# The [export] extra is useful later for Raspberry Pi NCNN export, but it is
+# much heavier and can make installation slow on Windows.
+ultralytics

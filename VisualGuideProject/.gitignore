@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv-win/
+venv/
+.ultralytics/
+Ultralytics/
+MatplotlibCache/
+audio_cache/
+runs/
+*.pt
+*_ncnn_model/

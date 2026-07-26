@@ -1,0 +1,2 @@
+# No pip dependency is required for the first controller milestone.
+# The real hardware run uses HiwonderSDK from the TurboPi Raspberry Pi image.
